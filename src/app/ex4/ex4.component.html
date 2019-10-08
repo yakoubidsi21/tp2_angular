@@ -1,6 +1,6 @@
 <h1> produit de deux nombres</h1>
 <p>donnez un premiere nombre </p> 
-<input type="text" #in1/>
-<p>donnez un deuxieme nombre </p> <input type="text" #in2/>
-<button>calculer</button>
-<p>le produit est :</p>
+<input type="text" [(ngModel)]="in1" />
+<p>donnez un deuxieme nombre </p> <input type="text" [(ngModel)]="in2"/>
+<button (click)="oncalcule()">calculer</button>
+<p>le produit est :{{produit}}</p>

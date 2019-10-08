@@ -8,11 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class Ex4Component implements OnInit {
 
   constructor() { }
-produit()
+  in1:number;
+  in2:number;
+  produit:number;
+oncalcule()
 {
-  var in1=(<HTMLInputElement>event.target).value;
-  var in2=(<HTMLInputElement>event.target).value;
   
+this.produit=(this.in1)*(this.in2);
+
 }
 
   ngOnInit() {
