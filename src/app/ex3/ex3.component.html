@@ -1,0 +1,6 @@
+<h1>Operation de calcul</h1>
+<p>donner un premier nombre </p><input type="text"(keyup)="onKeyUp($event)" #in1 />
+<p>le carrée est :{{message}}</p>
+<p> donner un deuxieme nombre</p> <input type="text" #in2/>
+ <button (click)="calculsomme(in1.value,in2.value)">somme</button>
+ <p>somme: {{somme}}</p>
